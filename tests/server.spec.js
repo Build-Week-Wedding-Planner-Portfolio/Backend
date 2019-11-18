@@ -8,7 +8,7 @@ beforeAll(async done => {
   request(server)
     .post("/api/auth/register")
     .send({
-      username: "user",
+      username: "user1",
       password: "pw",
       email: "123@123.com",
       location: "Miami, FL"
