@@ -1,7 +1,7 @@
 exports.seed = function(knex, Promise) {
   return knex("posts").insert([
     {
-      id:1,
+      
       couple_name: "Seema and Anish's Wedding",
       wedding_theme: "Traditional",
       wedding_date: "2019-07-28",
@@ -11,7 +11,7 @@ exports.seed = function(knex, Promise) {
       wedding_photographer: "Sam Smith",
       user_id: 1
     },
-    {  id:2,
+    {  
       couple_name: "James and Lynn's Wedding",
       wedding_theme: "Modern",
       wedding_date: "2019-08-24",
@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
       user_id: 2
     },
     { 
-      id:3,
+      
       couple_name: "Eric and Jessica's Wedding",
       wedding_theme: "Rustic",
       wedding_date: "2019-07-14",
@@ -33,7 +33,7 @@ exports.seed = function(knex, Promise) {
       user_id: 3
     },
     {
-      id:4,
+      
       couple_name: "Shruti and Badri's Wedding",
       wedding_theme: "Country",
       wedding_date: "2019-01-24",
@@ -44,7 +44,7 @@ exports.seed = function(knex, Promise) {
       user_id: 1
     },
     { 
-      id:5,
+      
       couple_name: "Josh and Jasmine's Wedding",
       wedding_theme: "Traditional",
       wedding_date: "2018-07-08",
@@ -55,7 +55,7 @@ exports.seed = function(knex, Promise) {
       user_id: 2
     },
     {
-       id:6,
+       
       couple_name: "Stewart and Jen's Wedding",
       wedding_theme: "Modern",
       wedding_date: "2016-06-19",
@@ -65,7 +65,7 @@ exports.seed = function(knex, Promise) {
       wedding_photographer: "Lynn Yang",
       user_id: 3
     },
-    {  id:7,
+    {  
       couple_name: "Larry & Lucy's Wedding",
       wedding_theme: "Rustic",
       wedding_date: "2018-14-27",
@@ -75,7 +75,7 @@ exports.seed = function(knex, Promise) {
       wedding_photographer: "James Bonebrake",
       user_id: 1
     },
-    {  id:8,
+    {  
       couple_name: "Cynthia & Erica's Wedding",
       wedding_theme: "Traditional",
       wedding_date: "2018-13-22",
@@ -85,7 +85,7 @@ exports.seed = function(knex, Promise) {
       wedding_photographer: "Rick Khan",
       user_id: 2
     },
-    {  id:9,
+    {  
       couple_name: "Sherjang and Sushma's Wedding",
       wedding_theme: "Modern",
       wedding_date: "2019-18-22",
