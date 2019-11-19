@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-
+// const db = require("./posts-model");
 const db = require("../data/dbConfig.js");
 const restricted = require("../auth/restricted.js");
 
@@ -16,9 +16,10 @@ router.get("/", restricted, (req, res) => {
     });
 });
 
-router.get("/all", (req, res) => {
+router.get("/all/:location", (req, res) => {
   db("posts")
     .returning("id")
+    .where (req.params.location)
     .then(posts => {
       res.status(200).json(posts);
     })
