@@ -16,10 +16,10 @@ router.post("/register", (req, res) => {
     const hash = bcrypt.hashSync(user.password, 14);
     user.password = hash;
     db("users")
-      .insert(user , "id")
+      .insert(user)
       .then(ids => {
         const id = ids[0];
-
+       console.log (ids)
         db("users")
           .where({ id })
           .first()
@@ -37,7 +37,7 @@ router.post("/register", (req, res) => {
       })
       .catch(error => {
         res.status(400).json({
-          error: "This username already exists!"
+          error: "This username already exists!" , error
         });
       });
   }
