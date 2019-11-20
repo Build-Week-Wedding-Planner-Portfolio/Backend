@@ -16,12 +16,12 @@ router.get("/", restricted, (req, res) => {
     });
 });
 
-router.post("/all", (req, res) => {
-  db.raw(`SELECT * FROM posts
-  where wedding_location LIKE %${req.body.location}% `)
- // db("posts")
-   // .returning("id")
-  //  .where (req.params.location)
+router.get("/all", (req, res) => {
+  //db.raw(`SELECT * FROM posts
+  //where wedding_location LIKE %${req.body.location}% `)
+ db("posts")
+    .returning("id")
+   //.where (req.params.location)
     .then(posts => {
       res.status(200).json(posts);
     })
